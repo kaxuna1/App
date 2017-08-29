@@ -1,0 +1,81 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsuleApp.WebApi", "CurrencyManagement.WebApi\ConsuleApp.WebApi.csproj", "{09E58912-9D90-4EC3-893D-694EA45D4551}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyManagement.DataContracts", "CurrencyManagement.DataContracts\CurrencyManagement.DataContracts.csproj", "{7F96D917-BEFF-4900-BEAE-540FF4D31C74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyManagement.DataAccessLayer", "CurrencyManagement.DataAccessLayer\CurrencyManagement.DataAccessLayer.csproj", "{527D355B-643B-4D89-9CE5-0B52761F552F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyManagement.BusinessLogicLayer", "CurrencyManagement.BusinessLogicLayer\CurrencyManagement.BusinessLogicLayer.csproj", "{D3F8F812-4599-4774-B5AC-544E052AD1A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyManagement.Authorization", "CurrencyManagement.Authorization\CurrencyManagement.Authorization.csproj", "{2E56AC63-A5D4-45C1-8EFB-08BE7843244F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Refrenced Assemblies", "Refrenced Assemblies", "{93EE64DA-C80F-4C6F-BD85-AA98FF37714C}"
+	ProjectSection(SolutionItems) = preProject
+		Refrenced Assemblies\JorJikaHelper.dll = Refrenced Assemblies\JorJikaHelper.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsuleApp.Web", "CurrencyManagement.Web\ConsuleApp.Web.csproj", "{AF866742-59EF-4DDA-AA66-4EABF9018442}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09E58912-9D90-4EC3-893D-694EA45D4551}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09E58912-9D90-4EC3-893D-694EA45D4551}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09E58912-9D90-4EC3-893D-694EA45D4551}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09E58912-9D90-4EC3-893D-694EA45D4551}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F96D917-BEFF-4900-BEAE-540FF4D31C74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F96D917-BEFF-4900-BEAE-540FF4D31C74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F96D917-BEFF-4900-BEAE-540FF4D31C74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F96D917-BEFF-4900-BEAE-540FF4D31C74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{527D355B-643B-4D89-9CE5-0B52761F552F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{527D355B-643B-4D89-9CE5-0B52761F552F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{527D355B-643B-4D89-9CE5-0B52761F552F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{527D355B-643B-4D89-9CE5-0B52761F552F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3F8F812-4599-4774-B5AC-544E052AD1A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3F8F812-4599-4774-B5AC-544E052AD1A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3F8F812-4599-4774-B5AC-544E052AD1A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3F8F812-4599-4774-B5AC-544E052AD1A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E56AC63-A5D4-45C1-8EFB-08BE7843244F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E56AC63-A5D4-45C1-8EFB-08BE7843244F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E56AC63-A5D4-45C1-8EFB-08BE7843244F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E56AC63-A5D4-45C1-8EFB-08BE7843244F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF866742-59EF-4DDA-AA66-4EABF9018442}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF866742-59EF-4DDA-AA66-4EABF9018442}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF866742-59EF-4DDA-AA66-4EABF9018442}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF866742-59EF-4DDA-AA66-4EABF9018442}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://10.195.103.69:8080/tfs/defaultcollection
+		SccProjectUniqueName0 = CurrencyManagement.Authorization\\CurrencyManagement.Authorization.csproj
+		SccProjectName0 = CurrencyManagement.Authorization
+		SccLocalPath0 = CurrencyManagement.Authorization
+		SccProjectUniqueName1 = CurrencyManagement.BusinessLogicLayer\\CurrencyManagement.BusinessLogicLayer.csproj
+		SccProjectName1 = CurrencyManagement.BusinessLogicLayer
+		SccLocalPath1 = CurrencyManagement.BusinessLogicLayer
+		SccProjectUniqueName2 = CurrencyManagement.DataAccessLayer\\CurrencyManagement.DataAccessLayer.csproj
+		SccProjectName2 = CurrencyManagement.DataAccessLayer
+		SccLocalPath2 = CurrencyManagement.DataAccessLayer
+		SccProjectUniqueName3 = CurrencyManagement.DataContracts\\CurrencyManagement.DataContracts.csproj
+		SccProjectName3 = CurrencyManagement.DataContracts
+		SccLocalPath3 = CurrencyManagement.DataContracts
+		SccLocalPath4 = .
+		SccProjectUniqueName5 = CurrencyManagement.WebApi\\ConsuleApp.WebApi.csproj
+		SccProjectName5 = CurrencyManagement.WebApi
+		SccLocalPath5 = CurrencyManagement.WebApi
+		SccProjectUniqueName6 = CurrencyManagement.Web\\ConsuleApp.Web.csproj
+		SccProjectName6 = CurrencyManagement.Web
+		SccLocalPath6 = CurrencyManagement.Web
+	EndGlobalSection
+EndGlobal

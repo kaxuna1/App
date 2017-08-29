@@ -1,0 +1,43 @@
+﻿Ext.define('CurrencyApp.model.CoursesTableModel', {
+    extend: 'CurrencyApp.model.BaseModel',
+    fields: [
+        { name: 'FXRateId', defaultValue: null },
+        { name: 'FirstCurrencyCode', defaultValue: null },
+        { name: 'SecondCurrencyCode', defaultValue: null },
+        { name: 'CurrencyPair', defaultValue: null },
+        { name: 'B1', defaultValue: null },
+        { name: 'B2', defaultValue: null },
+        { name: 'B3', defaultValue: null },
+        { name: 'B4', defaultValue: null },
+        { name: 'B5', defaultValue: null },
+        { name: 'B6', defaultValue: null },
+        { name: 'B7', defaultValue: null },
+        { name: 'B8', defaultValue: null },
+        { name: 'B9', defaultValue: null },
+        { name: 'B10', defaultValue: null },
+        { name: 'B11', defaultValue: null },
+        { name: 'B12', defaultValue: null },
+        { name: 'B13', defaultValue: null },
+        { name: 'B14', defaultValue: null },
+        { name: 'B15', defaultValue: null },
+        { name: 'S1', defaultValue: null },
+        { name: 'S2', defaultValue: null },
+        { name: 'S3', defaultValue: null },
+        { name: 'S4', defaultValue: null },
+        { name: 'S5', defaultValue: null },
+        { name: 'S6', defaultValue: null },
+        { name: 'S7', defaultValue: null },
+        { name: 'S8', defaultValue: null },
+        { name: 'S9', defaultValue: null },
+        { name: 'S10', defaultValue: null },
+        { name: 'S11', defaultValue: null },
+        { name: 'S12', defaultValue: null },
+        { name: 'S13', defaultValue: null },
+        { name: 'S14', defaultValue: null },
+        { name: 'S15', defaultValue: null },
+        { name: 'StartDate', defaultValue: null },
+        { name: 'NBG', defaultValue: null }
+    ]
+});
+
+
