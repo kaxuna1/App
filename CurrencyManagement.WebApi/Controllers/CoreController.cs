@@ -126,6 +126,7 @@ namespace CurrencyManagement.WebApi.Controllers
                 return Request.CreateResponse(new {success = false, errorMessage = ex.Message});
             }
         }
+       
 
         [HttpPost]
         [UserAuthorize]
@@ -222,6 +223,8 @@ namespace CurrencyManagement.WebApi.Controllers
             }
         }
 
+        
+        
         [HttpPost]
         [UserAuthorize]
         [Route(GlobalConfig.BaseUrl + "Core/AddOfficerToVillage")]
@@ -381,6 +384,33 @@ namespace CurrencyManagement.WebApi.Controllers
                 {
                     var data = db.Query<dynamic>("[dbo].[getOfficers] @BranchId",
                         new {BranchId = branchId});
+
+
+                    return Request.CreateResponse(new {data, success = true});
+                }
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(new {success = false, errorMessage = ex.Message});
+            }
+        }
+
+        [HttpPost]
+        [UserAuthorize]
+        [Route(GlobalConfig.BaseUrl + "Core/GetAvailableKomli")]
+        public HttpResponseMessage GetAvailableKomli(GetAvailableKomliRequestModel param)
+        {
+            var token = Request.GetHeaderValueOrNull("Authorization");
+
+            var authorization = AuthInstance.AuthorizationList[token];
+            
+
+             try
+            {
+                using (var db = BaseRepository.OpenConnection2())
+                {
+                    var data = db.Query<dynamic>("[dbo].[GetAvailableKomliCountForVilage] @VillageId,@date",
+                        new {VillageId = param.vilageId,date= param.date});
 
 
                     return Request.CreateResponse(new {data, success = true});

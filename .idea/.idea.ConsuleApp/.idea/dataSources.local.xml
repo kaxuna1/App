@@ -11,5 +11,10 @@
       <user-name>AppDB</user-name>
       <introspection-schemas>Consul:dbo</introspection-schemas>
     </data-source>
+    <data-source name="@localhost" uuid="0f02a855-7b5a-4401-b86d-aef6b05932ee">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <secret-storage>master_key</secret-storage>
+      <first-sync>true</first-sync>
+    </data-source>
   </component>
 </project>

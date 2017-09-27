@@ -1646,8 +1646,6 @@ Ext.define('CurrencyApp.view.main.Navigation',
                                                                                                             e) {
 
 
-                                                                                        
-                                                                                        
                                                                                         var id = record.data.Id;
                                                                                         var branchId = id;
                                                                                         var vilageFilterDate =
@@ -1948,6 +1946,64 @@ Ext.define('CurrencyApp.view.main.Navigation',
                                                                                                                                                 },
 
                                                                                                                                                 items: [
+
+                                                                                                                                                    {
+                                                                                                                                                        xtype: 'datefield',
+                                                                                                                                                        fieldLabel: 'ძალაში შესვლის თარიღი',
+                                                                                                                                                        id: 'komliValidFromField',
+                                                                                                                                                        allowBlank: false,
+                                                                                                                                                        listeners: {
+                                                                                                                                                            change: function (a, b, c) {
+                                                                                                                                                                Ext
+                                                                                                                                                                    .Ajax
+                                                                                                                                                                    .request(
+                                                                                                                                                                        {
+                                                                                                                                                                            url: Helpers
+                                                                                                                                                                                .serviceUrl +
+                                                                                                                                                                            "Core/GetAvailableKomli",
+                                                                                                                                                                            method: "POST",
+                                                                                                                                                                            timeout: 90000,
+                                                                                                                                                                            jsonData: JSON
+                                                                                                                                                                                .stringify(
+                                                                                                                                                                                    {
+                                                                                                                                                                                        vilageId: id,
+                                                                                                                                                                                        date: b
+                                                                                                                                                                                    }),
+                                                                                                                                                                            headers: {
+                                                                                                                                                                                "Authorization": localStorage
+                                                                                                                                                                                    .getItem(
+                                                                                                                                                                                        'token')
+                                                                                                                                                                            },
+                                                                                                                                                                            success: function (result) {
+                                                                                                                                                                                var
+                                                                                                                                                                                    resultObj =
+                                                                                                                                                                                        Ext
+                                                                                                                                                                                            .decode(
+                                                                                                                                                                                                result
+                                                                                                                                                                                                    .responseText);
+                                                                                                                                                                                console.log(resultObj);
+
+                                                                                                                                                                                var
+                                                                                                                                                                                    available =
+                                                                                                                                                                                        resultObj
+                                                                                                                                                                                            .Result
+                                                                                                                                                                                            .data[0]['available'];
+
+                                                                                                                                                                                Ext.getCmp('komliCountFieldForOfficerAdd').maxValue = available;
+
+
+                                                                                                                                                                            },
+                                                                                                                                                                            failure: function (result) {
+
+                                                                                                                                                                            }
+                                                                                                                                                                            //,jsonData: params
+                                                                                                                                                                        });
+
+
+                                                                                                                                                            }
+                                                                                                                                                        },
+                                                                                                                                                        minValue: new Date()
+                                                                                                                                                    },
                                                                                                                                                     {
                                                                                                                                                         xtype: 'combobox',
                                                                                                                                                         fieldLabel: 'ოფიცერი',
@@ -1974,8 +2030,8 @@ Ext.define('CurrencyApp.view.main.Navigation',
                                                                                                                                                                             "Core/getOfficers",
                                                                                                                                                                             method: "GET",
                                                                                                                                                                             timeout: 90000,
-                                                                                                                                                                            extraParams:{
-                                                                                                                                                                              branchId:  branchId
+                                                                                                                                                                            extraParams: {
+                                                                                                                                                                                branchId: branchId
                                                                                                                                                                             },
                                                                                                                                                                             headers: {
                                                                                                                                                                                 "Authorization": localStorage
@@ -1997,16 +2053,9 @@ Ext.define('CurrencyApp.view.main.Navigation',
                                                                                                                                                     {
                                                                                                                                                         fieldLabel: 'კომლი',
                                                                                                                                                         name: 'komli',
-                                                                                                                                                        id: 'komliCountField',
-                                                                                                                                                        xtype: 'textfield'
-                                                                                                                                                    },
-                                                                                                                                                    {
-                                                                                                                                                        xtype: 'datefield',
-                                                                                                                                                        fieldLabel: 'ძალაში შესვლის თარიღი',
-                                                                                                                                                        id: 'komliValidFromField',
-                                                                                                                                                        allowBlank: false,
-                                                                                                                                                        minValue: new
-                                                                                                                                                        Date()
+                                                                                                                                                        minValue: 1,
+                                                                                                                                                        id: 'komliCountFieldForOfficerAdd',
+                                                                                                                                                        xtype: 'numberfield'
                                                                                                                                                     },
                                                                                                                                                     {
                                                                                                                                                         xtype: 'button',
@@ -2020,16 +2069,26 @@ Ext.define('CurrencyApp.view.main.Navigation',
                                                                                                                                                             var
                                                                                                                                                                 sendData =
                                                                                                                                                                     {
-                                                                                                                                                                        id: id,
-                                                                                                                                                                        komli: Ext
+                                                                                                                                                                        VillageId: id,
+                                                                                                                                                                        Komli: Ext
                                                                                                                                                                             .getCmp(
-                                                                                                                                                                                "komliCountField")
+                                                                                                                                                                                "komliCountFieldForOfficerAdd")
                                                                                                                                                                             .getValue(),
-                                                                                                                                                                        validFrom: Ext
+                                                                                                                                                                        ValidFrom: Ext
                                                                                                                                                                             .getCmp(
                                                                                                                                                                                 "komliValidFromField")
+                                                                                                                                                                            .getValue(),
+                                                                                                                                                                        OfficerId: Ext
+                                                                                                                                                                            .getCmp(
+                                                                                                                                                                                "officerForVilageCombo")
                                                                                                                                                                             .getValue()
                                                                                                                                                                     };
+
+                                                                                                                                                            if (Ext.getCmp('komliCountFieldForOfficerAdd').maxValue < sendData.Komli) {
+                                                                                                                                                                alert('კომლების რაოდენობა არ შეიძლება იყოს ' +
+                                                                                                                                                                    Ext.getCmp('komliCountFieldForOfficerAdd').maxValue + 'ზე მეტი');
+                                                                                                                                                                return;
+                                                                                                                                                            }
 
 
                                                                                                                                                             Ext
@@ -2038,7 +2097,7 @@ Ext.define('CurrencyApp.view.main.Navigation',
                                                                                                                                                                     {
                                                                                                                                                                         url: Helpers
                                                                                                                                                                             .serviceUrl +
-                                                                                                                                                                        "Core/komliChange",
+                                                                                                                                                                        "Core/AddOfficerToVillage",
                                                                                                                                                                         method: "POST",
                                                                                                                                                                         timeout: 90000,
                                                                                                                                                                         jsonData: JSON
@@ -2051,12 +2110,10 @@ Ext.define('CurrencyApp.view.main.Navigation',
                                                                                                                                                                         },
                                                                                                                                                                         success: function (result) {
 
-                                                                                                                                                                            win3
+                                                                                                                                                                            win4
                                                                                                                                                                                 .close();
-                                                                                                                                                                            grid
-                                                                                                                                                                                .getStore()
-                                                                                                                                                                                .load();
-
+                                                                                                                                                                            Ext.getCmp("vilagesGrid").getStore().load();
+                                                                                                                                                                            Ext.getCmp('villageOfficersGrid').getStore().load();
                                                                                                                                                                             var
                                                                                                                                                                                 resultObj =
                                                                                                                                                                                     Ext

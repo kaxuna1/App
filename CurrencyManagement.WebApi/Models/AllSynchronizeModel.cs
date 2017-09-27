@@ -73,4 +73,10 @@ namespace CurrencyManagement.WebApi.Models
         public DateTime ValidFrom;
         public int Komli;
     }
+
+    public class GetAvailableKomliRequestModel
+    {
+        public long vilageId;
+        public DateTime date;
+    }
 }
