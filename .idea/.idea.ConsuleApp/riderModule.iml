@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="RIDER_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$/../..">
+      <sourceFolder url="file://$MODULE_DIR$/../../CurrencyManagement.Authorization" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../CurrencyManagement.BusinessLogicLayer" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../CurrencyManagement.DataAccessLayer" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../CurrencyManagement.DataContracts" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../CurrencyManagement.Web" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../CurrencyManagement.WebApi" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../packages/Microsoft.Net.Compilers.1.0.0/tools/csc.exe" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../packages/Microsoft.Net.Compilers.1.0.0/tools/Microsoft.Build.Tasks.CodeAnalysis.dll" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../packages/Microsoft.Net.Compilers.1.0.0/tools/Microsoft.CodeAnalysis.CSharp.dll" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../packages/Microsoft.Net.Compilers.1.0.0/tools/Microsoft.CodeAnalysis.dll" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../packages/Microsoft.Net.Compilers.1.0.0/tools/Microsoft.CodeAnalysis.VisualBasic.dll" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../packages/Microsoft.Net.Compilers.1.0.0/tools/Microsoft.CSharp.Core.targets" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../packages/Microsoft.Net.Compilers.1.0.0/tools/Microsoft.VisualBasic.Core.targets" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../packages/Microsoft.Net.Compilers.1.0.0/tools/System.Collections.Immutable.dll" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../packages/Microsoft.Net.Compilers.1.0.0/tools/System.Reflection.Metadata.dll" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../packages/Microsoft.Net.Compilers.1.0.0/tools/vbc.exe" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../packages/Microsoft.Net.Compilers.1.0.0/tools/VBCSCompiler.exe" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../packages/Microsoft.Net.Compilers.1.0.0/tools/VBCSCompiler.exe.config" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../Refrenced Assemblies/JorJikaHelper.dll" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/../../CurrencyManagement.Authorization/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../CurrencyManagement.Authorization/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../CurrencyManagement.BusinessLogicLayer/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../CurrencyManagement.BusinessLogicLayer/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../CurrencyManagement.DataAccessLayer/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../CurrencyManagement.DataAccessLayer/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../CurrencyManagement.DataContracts/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../CurrencyManagement.DataContracts/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../CurrencyManagement.Web/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../CurrencyManagement.Web/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../CurrencyManagement.WebApi/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../CurrencyManagement.WebApi/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../packages" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

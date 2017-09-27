@@ -91,14 +91,11 @@ namespace CurrencyManagement.WebApi.Controllers
         }
 
 
-
-
         [HttpGet]
         [UserAuthorize]
         [Route(GlobalConfig.BaseUrl + "Core/SyncService")]
         public HttpResponseMessage GetVillageList(dynamic param)
         {
-
             var token = Request.GetHeaderValueOrNull("Authorization");
 
             var authorization = AuthInstance.AuthorizationList[token];
@@ -109,10 +106,8 @@ namespace CurrencyManagement.WebApi.Controllers
             {
                 using (var db = BaseRepository.OpenConnection())
                 {
-           
-
                     syncModel.Consuls = db.Query<ConsulModel>("GetConsulList @VillageId , @ConsulName",
-                            new { VillageId = 0, ConsulName = "" })
+                            new {VillageId = 0, ConsulName = ""})
                         .OrderBy(o => o.Id);
 
                     syncModel.Villages = db.Query<VillageModel>("GetVillageList").OrderBy(o => o.Id);
@@ -122,53 +117,340 @@ namespace CurrencyManagement.WebApi.Controllers
 
                     syncModel.Regions = db.Query<Region>("GetRegions").OrderBy(o => o.Id);
 
-       
 
-                    return Request.CreateResponse(new { syncModel, success = true });
+                    return Request.CreateResponse(new {syncModel, success = true});
                 }
             }
             catch (Exception ex)
             {
-                return Request.CreateResponse(new { success = false, errorMessage = ex.Message });
+                return Request.CreateResponse(new {success = false, errorMessage = ex.Message});
             }
-            
         }
 
         [HttpPost]
         [UserAuthorize]
-        [Route(GlobalConfig.BaseUrl + "Core/report")]
+        [Route(GlobalConfig.BaseUrl + "Core/report1")]
         public HttpResponseMessage GetReport(ReportParams param)
         {
-
             var token = Request.GetHeaderValueOrNull("Authorization");
 
             var authorization = AuthInstance.AuthorizationList[token];
 
-            
 
             try
             {
                 using (var db = BaseRepository.OpenConnection2())
                 {
-           
+                    var data = db.Query<dynamic>(
+                        "[Reports].[ConsulApplicatinStatusReport] @FromDate,@ToDate,@BranchId,@ConsulId",
+                        new
+                        {
+                            FromDate = param.from,
+                            ToDate = param.to,
+                            BranchId = param.branch,
+                            ConsulId = param.consul
+                        });
 
-                    var data = db.Query<dynamic>("[Reports].[ConsulApplicatinStatusReport] @FromDate,@ToDate,@BranchId,@ConsulId",
-                            new { FromDate = param.from, ToDate = param.to, BranchId=param.branch, ConsulId=param.consul });
 
-              
-
-       
-
-                    return Request.CreateResponse(new { data, success = true });
+                    return Request.CreateResponse(new {data, success = true});
                 }
             }
             catch (Exception ex)
             {
-                return Request.CreateResponse(new { success = false, errorMessage = ex.Message });
+                return Request.CreateResponse(new {success = false, errorMessage = ex.Message});
             }
-            
         }
 
+        [HttpPost]
+        [UserAuthorize]
+        [Route(GlobalConfig.BaseUrl + "Core/statusChange")]
+        public HttpResponseMessage StatusChange(StatusChangeParams param)
+        {
+            var token = Request.GetHeaderValueOrNull("Authorization");
+
+            var authorization = AuthInstance.AuthorizationList[token];
+
+
+            try
+            {
+                using (var db = BaseRepository.OpenConnection2())
+                {
+                    var data = db.Query<dynamic>("[dbo].[AddBranchStatus] @BranchId,@UserId,@StatusId",
+                        new {BranchId = param.id, UserId = authorization.User.UserId, StatusId = param.status});
+
+
+                    return Request.CreateResponse(new {data, success = true});
+                }
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(new {success = false, errorMessage = ex.Message});
+            }
+        }
+
+
+        [HttpPost]
+        [UserAuthorize]
+        [Route(GlobalConfig.BaseUrl + "Core/komliChange")]
+        public HttpResponseMessage KomliChange(KomliChangeParams param)
+        {
+            var token = Request.GetHeaderValueOrNull("Authorization");
+
+            var authorization = AuthInstance.AuthorizationList[token];
+
+
+            try
+            {
+                using (var db = BaseRepository.OpenConnection2())
+                {
+                    var data = db.Query<dynamic>("dbo.AddVillageKomli @VillageId,@UserId,@Komli,@ValidFrom",
+                        new
+                        {
+                            VillageId = param.id,
+                            UserId = authorization.User.UserId,
+                            Komli = param.komli,
+                            ValidFrom = param.validFrom
+                        });
+
+
+                    return Request.CreateResponse(new {data, success = true});
+                }
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(new {success = false, errorMessage = ex.Message});
+            }
+        }
+
+        [HttpPost]
+        [UserAuthorize]
+        [Route(GlobalConfig.BaseUrl + "Core/AddOfficerToVillage")]
+        public HttpResponseMessage AddOfficerToVillage(AddOfficerToVillageModel param)
+        {
+            var token = Request.GetHeaderValueOrNull("Authorization");
+
+            var authorization = AuthInstance.AuthorizationList[token];
+
+
+            try
+            {
+                using (var db = BaseRepository.OpenConnection2())
+                {
+                    var data = db.Query<dynamic>("dbo.AddVillageToOfficer  " +
+                                                 "@VillageId, @UserId, @OfficerId, @ValidFrom, @Komli",
+                        new
+                        {
+                            VillageId = param.VillageId,
+                            UserId = authorization.User.UserId,
+                            Komli = param.Komli,
+                            ValidFrom = param.ValidFrom,
+                            OfficerId = param.OfficerId
+                        });
+
+
+                    return Request.CreateResponse(new {data, success = true});
+                }
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(new {success = false, errorMessage = ex.Message});
+            }
+        }
+
+        [HttpPost]
+        [UserAuthorize]
+        [Route(GlobalConfig.BaseUrl + "Core/report2")]
+        public HttpResponseMessage GetReport2(ReportParams param)
+        {
+            var token = Request.GetHeaderValueOrNull("Authorization");
+
+            var authorization = AuthInstance.AuthorizationList[token];
+
+
+            try
+            {
+                using (var db = BaseRepository.OpenConnection2())
+                {
+                    var data = db.Query<dynamic>("[Reports].[ConsulTotalLoansReport] @ConsulId",
+                        new {ConsulId = param.consul});
+
+
+                    return Request.CreateResponse(new {data, success = true});
+                }
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(new {success = false, errorMessage = ex.Message});
+            }
+        }
+
+        [HttpPost]
+        [UserAuthorize]
+        [Route(GlobalConfig.BaseUrl + "Core/report3")]
+        public HttpResponseMessage GetReport3(ReportParams param)
+        {
+            var token = Request.GetHeaderValueOrNull("Authorization");
+
+            var authorization = AuthInstance.AuthorizationList[token];
+
+
+            try
+            {
+                using (var db = BaseRepository.OpenConnection2())
+                {
+                    var data = db.Query<dynamic>("[Reports].[ConsulPortfolioReport] @ConsulId",
+                        new {ConsulId = param.consul});
+
+
+                    return Request.CreateResponse(new {data, success = true});
+                }
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(new {success = false, errorMessage = ex.Message});
+            }
+        }
+
+        [HttpPost]
+        [UserAuthorize]
+        [Route(GlobalConfig.BaseUrl + "Core/branches")]
+        public HttpResponseMessage GetBranches(ReportParams param)
+        {
+            var token = Request.GetHeaderValueOrNull("Authorization");
+
+            var authorization = AuthInstance.AuthorizationList[token];
+
+
+            try
+            {
+                using (var db = BaseRepository.OpenConnection2())
+                {
+                    var data = db.Query<dynamic>("[dbo].[getBranches]",
+                        new { });
+
+
+                    return Request.CreateResponse(new {data, success = true});
+                }
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(new {success = false, errorMessage = ex.Message});
+            }
+        }
+
+        [HttpGet]
+        [AllowAnonymous]
+        [Route(GlobalConfig.BaseUrl + "Core/statusNames")]
+        public HttpResponseMessage GetStatusNames(ReportParams param)
+        {
+            var token = Request.GetHeaderValueOrNull("Authorization");
+
+            var authorization = AuthInstance.AuthorizationList[token];
+
+
+            try
+            {
+                using (var db = BaseRepository.OpenConnection2())
+                {
+                    var data = db.Query<dynamic>("[dbo].[getStatusNames]",
+                        new { });
+
+
+                    return Request.CreateResponse(new {data, success = true});
+                }
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(new {success = false, errorMessage = ex.Message});
+            }
+        }
+
+        [HttpGet]
+        [AllowAnonymous]
+        [Route(GlobalConfig.BaseUrl + "Core/getOfficers")]
+        public HttpResponseMessage GetStatusNames(long branchId)
+        {
+            var token = Request.GetHeaderValueOrNull("Authorization");
+
+            var authorization = AuthInstance.AuthorizationList[token];
+            
+
+             try
+            {
+                using (var db = BaseRepository.OpenConnection2())
+                {
+                    var data = db.Query<dynamic>("[dbo].[getOfficers] @BranchId",
+                        new {BranchId = branchId});
+
+
+                    return Request.CreateResponse(new {data, success = true});
+                }
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(new {success = false, errorMessage = ex.Message});
+            }
+        }
+
+        [HttpGet]
+        [Route(GlobalConfig.BaseUrl + "Core/GetVilages")]
+        public HttpResponseMessage getVilages(long id, String Date)
+        {
+            var token = Request.GetHeaderValueOrNull("Authorization");
+
+            var authorization = AuthInstance.AuthorizationList[token];
+
+
+            try
+            {
+                using (var db = BaseRepository.OpenConnection2())
+                {
+                    var data = db.Query<dynamic>("[dbo].[getVilages] @branchId,@date",
+                        new
+                        {
+                            branchId = id,
+                            date = Date
+                        });
+
+
+                    return Request.CreateResponse(new {data, success = true});
+                }
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(new {success = false, errorMessage = ex.Message});
+            }
+        }
+
+        [HttpGet]
+        [Route(GlobalConfig.BaseUrl + "Core/GetVilageOfficers")]
+        public HttpResponseMessage GetVilageOfficers(long id, String Date)
+        {
+            var token = Request.GetHeaderValueOrNull("Authorization");
+
+            var authorization = AuthInstance.AuthorizationList[token];
+
+
+            try
+            {
+                using (var db = BaseRepository.OpenConnection2())
+                {
+                    var data = db.Query<dynamic>("[dbo].[getVillageOfficers] @VillageId,@Date",
+                        new
+                        {
+                            VillageId = id,
+                            Date = Date
+                        });
+
+
+                    return Request.CreateResponse(new {data, success = true});
+                }
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(new {success = false, errorMessage = ex.Message});
+            }
+        }
 
         [HttpGet]
         [Route(GlobalConfig.BaseUrl + "Core/GetFile/{fileId}/{fileName}/{extension}")]
@@ -184,7 +466,8 @@ namespace CurrencyManagement.WebApi.Controllers
 
                 response.Content = new ByteArrayContent(fileByteData);
                 response.Content.Headers.ContentDisposition = new ContentDispositionHeaderValue("attachment");
-                response.Content.Headers.ContentDisposition.FileName = fileTitle + " - " + DateTime.Now.ToString("dd.MM.yyyy") + "." + extension;
+                response.Content.Headers.ContentDisposition.FileName =
+                    fileTitle + " - " + DateTime.Now.ToString("dd.MM.yyyy") + "." + extension;
                 response.Content.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");
                 response.Content.Headers.ContentLength = fileByteData.Length;
                 response.StatusCode = HttpStatusCode.OK;

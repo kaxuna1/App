@@ -48,4 +48,29 @@ namespace CurrencyManagement.WebApi.Models
         public DateTime from { get; set; }
         public DateTime to { get; set; }
     }
+    public class StatusChangeParams
+    {
+        public long id;
+        public int status;
+    }
+    public class KomliChangeParams
+    {
+        public long id;
+        public int komli;
+        public DateTime validFrom;
+    }
+
+    public class GetVilagesParams
+    {
+        public long Id;
+        public DateTime Date;
+    }
+
+    public class AddOfficerToVillageModel
+    {
+        public long OfficerId;
+        public long VillageId;
+        public DateTime ValidFrom;
+        public int Komli;
+    }
 }

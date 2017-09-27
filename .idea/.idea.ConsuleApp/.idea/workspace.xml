@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c4801b8a-6717-40cf-adfd-0b0ba68b993e" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="Consul@10.195.103.93" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="Consul@10.195.103.93" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="Consul" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="dbo" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="Consul@10.195.103.93" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="Consul" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="dbo" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="Navigation.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CurrencyManagement.Web/app/view/main/Navigation.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-783">
+              <caret line="1959" column="80" lean-forward="false" selection-start-line="1959" selection-start-column="80" selection-end-line="1959" selection-end-column="80" />
+              <folding>
+                <element signature="e#140840#169924#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CoreController.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CurrencyManagement.WebApi/Controllers/CoreController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="11">
+              <caret line="240" column="27" lean-forward="false" selection-start-line="240" selection-start-column="27" selection-end-line="240" selection-end-column="27" />
+              <folding>
+                <marker date="1506437941395" expanded="false" signature="6:769" ph="..." />
+                <marker date="1506437941395" expanded="true" signature="818:18213" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="868:18211" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="1059:1179" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="1361:1480" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="1654:1777" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="1991:2118" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="2318:2468" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="2646:2764" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="2964:3097" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="3265:4408" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="3507:4240" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="3586:4226" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="4273:4398" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="4572:5563" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="4743:5395" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="4823:5381" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="5050:5280" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="5428:5553" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="5741:6508" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="5912:6340" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="5992:6326" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="6373:6498" ph="{...}" />
+                <marker date="1506437941395" expanded="false" signature="6684:7644" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="6855:7476" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="6935:7462" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="7115:7361" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="7509:7634" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="7842:8940" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="8013:8772" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="8093:8758" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="8347:8657" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="8805:8930" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="9105:9808" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="9276:9640" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="9356:9626" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="9673:9798" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="9973:10675" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="10144:10507" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="10224:10493" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="10540:10665" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="10842:11498" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="11013:11330" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="11093:11316" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="11363:11488" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="11671:12330" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="11842:12162" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="11922:12148" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="12195:12320" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="12498:13195" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="12682:13027" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="12762:13013" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="13060:13185" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="13340:14142" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="13511:13974" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="13591:13960" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="13749:13859" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="14007:14132" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="14301:15113" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="14472:14945" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="14552:14931" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="14719:14830" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="14978:15103" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="15310:16333" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="15492:16189" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="16206:16293" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="16493:17287" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="16910:17277" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="17465:17583" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="17756:17880" ph="{...}" />
+                <marker date="1506437941395" expanded="true" signature="18081:18205" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AllSynchronizeModel.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CurrencyManagement.WebApi/Models/AllSynchronizeModel.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="411">
+              <caret line="68" column="41" lean-forward="false" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="41" />
+              <folding>
+                <marker date="1506437403962" expanded="false" signature="6:84" ph="..." />
+                <marker date="1506437403962" expanded="true" signature="128:1876" ph="{...}" />
+                <marker date="1506437403962" expanded="true" signature="167:434" ph="{...}" />
+                <marker date="1506437403962" expanded="true" signature="465:640" ph="{...}" />
+                <marker date="1506437403962" expanded="true" signature="669:803" ph="{...}" />
+                <marker date="1506437403962" expanded="true" signature="827:916" ph="{...}" />
+                <marker date="1506437403962" expanded="true" signature="945:1117" ph="{...}" />
+                <marker date="1506437403962" expanded="true" signature="1148:1364" ph="{...}" />
+                <marker date="1506437403962" expanded="true" signature="1400:1463" ph="{...}" />
+                <marker date="1506437403962" expanded="true" signature="1498:1595" ph="{...}" />
+                <marker date="1506437403962" expanded="true" signature="1630:1696" ph="{...}" />
+                <marker date="1506437403962" expanded="true" signature="1739:1874" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>test2</find>
+      <find>VilagesModel</find>
+      <find>VilageOfficerModel</find>
+      <find>itemdblclick</find>
+      <find>itemclick</find>
+      <find>GetVilage</find>
+      <find>.getStore()</find>
+      <find>test</find>
+      <find>კომლის შეცვლა</find>
+      <find>status</find>
+      <find>branch</find>
+      <find>branchesgr</find>
+      <find>branchId</find>
+      <find>statusnames</find>
+      <find>branchesGrid</find>
+      <find>extraparams</find>
+      <find>GetVilageOfficers</find>
+      <find>getOfficers</find>
+      <find>officers</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/CurrencyManagement.WebApi/Models/AllSynchronizeModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CurrencyManagement.WebApi/Controllers/CoreController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DB1B749D-3138-4629-AB92-1C5EE904AC4B/29/9b4a93a0/Enumerable.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/CurrencyManagement.WebApi/Web.config" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/CurrencyManagement.Web/app/utils/Helpers.js" />
+        <option value="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DB1B749D-3138-4629-AB92-1C5EE904AC4B/29/9b4a93a0/Enumerable.cs" />
+        <option value="$PROJECT_DIR$/CurrencyManagement.Web/app/view/main/Navigation.js" />
+        <option value="$PROJECT_DIR$/CurrencyManagement.WebApi/Models/AllSynchronizeModel.cs" />
+        <option value="/409afc1b/71f35bb5-960d-4576-972e-5f3b5070d20e/database/Consul/schema/dbo/routine/AddVillageToOfficer.sql" />
+        <option value="$PROJECT_DIR$/CurrencyManagement.WebApi/Controllers/CoreController.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="SolutionExplorer">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ConsuleApp (6 projects)" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ConsuleApp (6 projects)" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ConsuleApp.Web" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="SQL Server (Microsoft)" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected=".NET Project.ConsuleApp.WebApi">
+    <configuration default="false" name="ConsuleApp.Web" type="DotNetProject" factoryName=".NET Project" temporary="true">
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/CurrencyManagement.Web/ConsuleApp.Web.csproj" />
+      <option name="PROJECT_KIND" value="Web" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.5" />
+      <option name="EXE_PATH" value="C:/Program Files/IIS Express/iisexpress.exe" />
+      <option name="PROGRAM_PARAMETERS" value="/config:$PROJECT_DIR$/.idea/config/applicationhost.config /site:ConsuleApp.Web /apppool:Clr4IntegratedAppPool" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CurrencyManagement.Web" />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="ConsuleApp.WebApi" type="DotNetProject" factoryName=".NET Project" temporary="true">
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/CurrencyManagement.WebApi/ConsuleApp.WebApi.csproj" />
+      <option name="PROJECT_KIND" value="Web" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.5" />
+      <option name="EXE_PATH" value="C:/Program Files/IIS Express/iisexpress.exe" />
+      <option name="PROGRAM_PARAMETERS" value="/config:$PROJECT_DIR$/.idea/config/applicationhost.config /site:ConsuleApp.WebApi /apppool:Clr4IntegratedAppPool" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CurrencyManagement.WebApi" />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="DotNetProject" factoryName=".NET Project">
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="PROJECT_TFM" value="" />
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+    <configuration default="false" name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="PROJECT_TFM" value="" />
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <envs />
+      <method />
+    </configuration>
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue=".NET Project.Default" />
+      <item index="1" class="java.lang.String" itemvalue=".NET Project.ConsuleApp.Web" />
+      <item index="2" class="java.lang.String" itemvalue=".NET Project.ConsuleApp.WebApi" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue=".NET Project.ConsuleApp.WebApi" />
+        <item index="1" class="java.lang.String" itemvalue=".NET Project.ConsuleApp.Web" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c4801b8a-6717-40cf-adfd-0b0ba68b993e" name="Default" comment="" />
+      <created>1506431581033</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1506431581033</updated>
+      <workItem from="1506431584301" duration="7487000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="7487000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18020834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1828125" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39957717" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/CurrencyManagement.WebApi/Controllers/CoreController.cs</url>
+          <line>381</line>
+          <properties startOffset="12801" endOffset="12914" documentPath="$PROJECT_DIR$/CurrencyManagement.WebApi/Controllers/CoreController.cs" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/CurrencyManagement.WebApi/Controllers/CoreController.cs</url>
+          <line>374</line>
+          <properties startOffset="12593" endOffset="12651" documentPath="$PROJECT_DIR$/CurrencyManagement.WebApi/Controllers/CoreController.cs" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/CurrencyManagement.WebApi/Controllers/CoreController.cs</url>
+          <line>372</line>
+          <properties startOffset="12521" endOffset="12579" documentPath="$PROJECT_DIR$/CurrencyManagement.WebApi/Controllers/CoreController.cs" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="3" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DB1B749D-3138-4629-AB92-1C5EE904AC4B/29/9b4a93a0/Enumerable.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="593" column="46" lean-forward="false" selection-start-line="593" selection-start-column="46" selection-end-line="593" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/71f35bb5-960d-4576-972e-5f3b5070d20e/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CurrencyManagement.WebApi/Web.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="188" lean-forward="true" selection-start-line="16" selection-start-column="93" selection-end-line="16" selection-end-column="188" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CurrencyManagement.Web/app/utils/Helpers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbSrc:///409afc1b/71f35bb5-960d-4576-972e-5f3b5070d20e/database/Consul/schema/dbo/routine/GetAvailableKomliForVilage.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbSrc:///409afc1b/71f35bb5-960d-4576-972e-5f3b5070d20e/database/Consul/schema/dbo/routine/AddVillageToOfficer.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="114" lean-forward="false" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="114" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CurrencyManagement.WebApi/Models/AllSynchronizeModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="68" column="41" lean-forward="false" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="41" />
+          <folding>
+            <marker date="1506437403962" expanded="false" signature="6:84" ph="..." />
+            <marker date="1506437403962" expanded="true" signature="128:1876" ph="{...}" />
+            <marker date="1506437403962" expanded="true" signature="167:434" ph="{...}" />
+            <marker date="1506437403962" expanded="true" signature="465:640" ph="{...}" />
+            <marker date="1506437403962" expanded="true" signature="669:803" ph="{...}" />
+            <marker date="1506437403962" expanded="true" signature="827:916" ph="{...}" />
+            <marker date="1506437403962" expanded="true" signature="945:1117" ph="{...}" />
+            <marker date="1506437403962" expanded="true" signature="1148:1364" ph="{...}" />
+            <marker date="1506437403962" expanded="true" signature="1400:1463" ph="{...}" />
+            <marker date="1506437403962" expanded="true" signature="1498:1595" ph="{...}" />
+            <marker date="1506437403962" expanded="true" signature="1630:1696" ph="{...}" />
+            <marker date="1506437403962" expanded="true" signature="1739:1874" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/rider.jar!/resources/html5-schema/html5/meta.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="24" column="16" lean-forward="false" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CurrencyManagement.Web/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="4" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CurrencyManagement.WebApi/Controllers/CoreController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11">
+          <caret line="240" column="27" lean-forward="false" selection-start-line="240" selection-start-column="27" selection-end-line="240" selection-end-column="27" />
+          <folding>
+            <marker date="1506437941395" expanded="false" signature="6:769" ph="..." />
+            <marker date="1506437941395" expanded="true" signature="818:18213" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="868:18211" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="1059:1179" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="1361:1480" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="1654:1777" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="1991:2118" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="2318:2468" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="2646:2764" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="2964:3097" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="3265:4408" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="3507:4240" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="3586:4226" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="4273:4398" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="4572:5563" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="4743:5395" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="4823:5381" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="5050:5280" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="5428:5553" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="5741:6508" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="5912:6340" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="5992:6326" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="6373:6498" ph="{...}" />
+            <marker date="1506437941395" expanded="false" signature="6684:7644" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="6855:7476" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="6935:7462" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="7115:7361" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="7509:7634" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="7842:8940" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="8013:8772" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="8093:8758" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="8347:8657" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="8805:8930" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="9105:9808" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="9276:9640" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="9356:9626" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="9673:9798" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="9973:10675" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="10144:10507" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="10224:10493" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="10540:10665" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="10842:11498" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="11013:11330" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="11093:11316" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="11363:11488" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="11671:12330" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="11842:12162" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="11922:12148" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="12195:12320" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="12498:13195" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="12682:13027" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="12762:13013" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="13060:13185" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="13340:14142" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="13511:13974" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="13591:13960" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="13749:13859" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="14007:14132" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="14301:15113" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="14472:14945" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="14552:14931" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="14719:14830" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="14978:15103" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="15310:16333" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="15492:16189" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="16206:16293" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="16493:17287" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="16910:17277" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="17465:17583" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="17756:17880" ph="{...}" />
+            <marker date="1506437941395" expanded="true" signature="18081:18205" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CurrencyManagement.Web/app/view/main/Navigation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-783">
+          <caret line="1959" column="80" lean-forward="false" selection-start-line="1959" selection-start-column="80" selection-end-line="1959" selection-end-column="80" />
+          <folding>
+            <element signature="e#140840#169924#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

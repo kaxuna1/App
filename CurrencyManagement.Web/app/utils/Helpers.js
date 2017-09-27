@@ -1,7 +1,7 @@
 ﻿Ext.define('CurrencyApp.utils.Helpers', {
     alternateClassName: ['Helpers'],
     singleton: true,
-    serviceUrl: 'http://localhost:32450/api/',
+    serviceUrl: 'http://localhost:7733/api/',
     //serviceUrl: 'http://ratesapi.credo.ge/api/',
     getComponent: function (itemId, parentContainet) {
         var result = parentContainet.query('*[itemId="' + itemId.toString() + '"]');
