@@ -481,6 +481,35 @@ namespace CurrencyManagement.WebApi.Controllers
                 return Request.CreateResponse(new {success = false, errorMessage = ex.Message});
             }
         }
+        [HttpGet]
+        [Route(GlobalConfig.BaseUrl + "Core/GetOfficerVilages")]
+        public HttpResponseMessage GetOfficerVilages(long id, String Date)
+        {
+            var token = Request.GetHeaderValueOrNull("Authorization");
+
+            var authorization = AuthInstance.AuthorizationList[token];
+
+
+            try
+            {
+                using (var db = BaseRepository.OpenConnection2())
+                {
+                    var data = db.Query<dynamic>("[dbo].[GetOfficerVilages] @OfficerId,@Date",
+                        new
+                        {
+                            OfficerId = id,
+                            Date = Date
+                        });
+
+
+                    return Request.CreateResponse(new {data, success = true});
+                }
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(new {success = false, errorMessage = ex.Message});
+            }
+        }
 
         [HttpGet]
         [Route(GlobalConfig.BaseUrl + "Core/GetFile/{fileId}/{fileName}/{extension}")]
