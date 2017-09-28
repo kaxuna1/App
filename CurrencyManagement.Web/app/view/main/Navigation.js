@@ -76,6 +76,16 @@ Ext.define('VilageOfficerModel',
             {name: 'FullName', type: 'string'}
         ]
     });
+Ext.define('OfficerVilagesModel',
+    {
+        extend: 'Ext.data.Model',
+        fields: [
+            {name: 'name', type: 'string'},
+            {name: 'komli', type: 'string'},
+            {name: 'village', type: 'string'},
+            {name: 'shegcevadobaJamuri', type: 'string'}
+        ]
+    });
 Ext.define('CurrencyApp.view.main.Navigation',
     {
         extend: 'Ext.panel.Panel',
@@ -2348,6 +2358,36 @@ Ext.define('CurrencyApp.view.main.Navigation',
                                                                                                                 xtype: 'grid',
                                                                                                                 flex: 1,
                                                                                                                 id: "villageOfficersGrid",
+                                                                                                                listeners: {
+                                                                                                                    itemclick: function (dv,
+                                                                                                                                         record,
+                                                                                                                                         item,
+                                                                                                                                         index,
+                                                                                                                                         e) {
+                                                                                                                        var id = record.data.officerId;
+                                                                                                                        //alert(id);
+
+
+                                                                                                                        var date = Ext
+                                                                                                                            .getCmp('vilagesGrid')
+                                                                                                                            .getStore()
+                                                                                                                            .proxy
+                                                                                                                            .extraParams.Date;
+
+                                                                                                                        var grid = Ext
+                                                                                                                            .getCmp(
+                                                                                                                                'officerVilagesGrid');
+                                                                                                                        grid.getStore()
+                                                                                                                            .proxy
+                                                                                                                            .extraParams = {
+                                                                                                                            id: id,
+                                                                                                                            Date: date
+                                                                                                                        }
+                                                                                                                        grid.getStore().load();
+
+
+                                                                                                                    }
+                                                                                                                },
                                                                                                                 store: new Ext.data
                                                                                                                     .Store({
                                                                                                                         autoLoad: true,
@@ -2395,7 +2435,7 @@ Ext.define('CurrencyApp.view.main.Navigation',
                                                                                                                         dataIndex: 'komli'
 
                                                                                                                     }
-                                                                                                                ],
+                                                                                                                ]
                                                                                                             }, {
                                                                                                                 xtype: 'container',
                                                                                                                 flex: 2
@@ -2405,7 +2445,75 @@ Ext.define('CurrencyApp.view.main.Navigation',
                                                                                                     }, {
                                                                                                         xtype: 'grid',
                                                                                                         margin: '5 0 0 0',
-                                                                                                        title: 'test3',
+                                                                                                        id:'officerVilagesGrid',
+                                                                                                        store: new Ext.data
+                                                                                                            .Store({
+                                                                                                                autoLoad: true,
+                                                                                                                model: 'OfficerVilagesModel',
+
+                                                                                                                reader: {
+                                                                                                                    type: 'json'
+                                                                                                                },
+                                                                                                                proxy: {
+                                                                                                                    type: 'ajax',
+                                                                                                                    url: Helpers
+                                                                                                                        .serviceUrl +
+                                                                                                                    "Core/GetOfficerVilages",
+                                                                                                                    extraParams: {},
+                                                                                                                    timeout: 90000,
+                                                                                                                    headers: {
+                                                                                                                        "Authorization": localStorage
+                                                                                                                            .getItem(
+                                                                                                                                'token')
+                                                                                                                    },
+                                                                                                                    reader: {
+                                                                                                                        type: 'json',
+                                                                                                                        rootProperty: 'Result.data'
+                                                                                                                    }
+                                                                                                                }
+                                                                                                            }),
+                                                                                                        columns: [
+                                                                                                            {
+                                                                                                                text: 'ოფიცერი',
+
+                                                                                                                flex: 1,
+
+                                                                                                                sortable: false,
+
+                                                                                                                dataIndex: 'name'
+
+                                                                                                            },
+                                                                                                            {
+                                                                                                                text: 'სოფელი',
+
+                                                                                                                flex: 1,
+
+                                                                                                                sortable: false,
+
+                                                                                                                dataIndex: 'village'
+
+                                                                                                            },
+                                                                                                            {
+                                                                                                                text: 'კომლი',
+
+                                                                                                                flex: 1,
+
+                                                                                                                sortable: false,
+
+                                                                                                                dataIndex: 'komli'
+
+                                                                                                            },
+                                                                                                            {
+                                                                                                                text: 'შეღწევადობა ჯამური',
+
+                                                                                                                flex: 1,
+
+                                                                                                                sortable: false,
+
+                                                                                                                dataIndex: 'shegcevadobaJamuri'
+
+                                                                                                            }
+                                                                                                        ],
                                                                                                         flex: 1
                                                                                                     }
                                                                                                 ]
